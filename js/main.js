@@ -92,7 +92,7 @@ const repoCard = p => `
       <span class="meta">${esc(p.tag)}</span></div>
   </a>`;
 
-/* 🔧 designCard: SIN data-preview. Clic → Behance directo. */
+/* designCard: SIN data-preview. Clic → Behance directo. */
 const designCard = p => `
   <a class="item d" data-k="d" href="${esc(p.url)}" target="_blank" rel="noopener">
     <div class="cover" style="${p.cover ? `background-image:url('${esc(p.cover)}')` : ''}"></div>
