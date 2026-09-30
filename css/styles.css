@@ -179,3 +179,11 @@ dialog iframe{width:100%;height:calc(100% - 55px);border:0;display:block}
   .caret{animation:none}
   html{scroll-behavior:auto}
 }
+
+/* Título dentro de los testimonios */
+.quote h3{
+  font:500 .95rem var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  margin-bottom:12px;
+}
