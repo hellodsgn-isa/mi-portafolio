@@ -196,3 +196,87 @@ dialog iframe{width:100%;height:calc(100% - 55px);border:0;display:block}
   .caret{animation:none}
   html{scroll-behavior:auto}
 }
+
+/* ==========================================================================
+   12. CASO DE ESTUDIO (acordeón)
+   ========================================================================== */
+.case-accordion details{
+  background:var(--ink);
+  color:#fff;
+  border-left:6px solid var(--design);
+  margin-bottom:0;
+}
+
+.case-accordion summary{
+  font-size:1.05rem;
+  padding:20px 24px;
+}
+
+.case-accordion summary:hover{
+  background:var(--code);
+}
+
+.case-body{
+  padding:8px 40px 40px;
+}
+
+.case-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:36px 40px;
+}
+
+.case-item h3{
+  font-size:1.15rem;
+  margin-bottom:10px;
+  color:#fff;
+}
+
+.case-item p{
+  color:#C9CDF0;
+  font-size:.97rem;
+  line-height:1.6;
+}
+
+.case-item ul{
+  color:#C9CDF0;
+  font-size:.97rem;
+  line-height:1.6;
+  padding-left:18px;
+}
+
+.case-item li{margin-bottom:6px}
+.case-item li strong{color:#fff}
+
+.case-num{
+  display:block;
+  font:500 .85rem var(--mono);
+  color:var(--design);
+  margin-bottom:8px;
+}
+
+.case-item--wide{
+  grid-column:1 / -1;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.case-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  list-style:none;
+  padding:0;
+}
+
+.case-chips li{
+  font:500 .85rem var(--mono);
+  padding:6px 12px;
+  border:1.5px solid var(--code);
+  background:rgba(36,64,240,.15);
+  color:#C9D1FF;
+}
+
+@media(max-width:600px){
+  .case-body{padding:8px 20px 28px}
+}

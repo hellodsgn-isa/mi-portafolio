@@ -19,6 +19,7 @@
     <a class="logo" href="#top">Isabella Alarcón</a>
     <nav aria-label="Principal">
       <a href="#trabajos">Trabajos</a>
+      <a href="#caso">Caso de estudio</a>
       <a href="#disciplinas">Disciplinas</a>
       <a href="#tecnologias">Tecnologías</a>
       <a href="#experiencia">Experiencia</a>
@@ -51,6 +52,89 @@
       </div>
       <div class="grid" id="grid" aria-live="polite"></div>
       <p class="note" id="note"></p>
+    </section>
+
+    <section id="caso" aria-labelledby="c-h">
+      <h2 id="c-h" class="section-title">Caso de estudio</h2>
+      <div class="exp case-accordion">
+        <details>
+          <summary>Alke Wallet — Billetera Digital <span class="yrs">Talento Digital · 2026</span></summary>
+
+          <div class="case-body">
+            <div class="case-grid">
+
+              <article class="case-item">
+                <span class="case-num">01</span>
+                <h3>Descripción de la actividad</h3>
+                <p>Diseñar y construir una aplicación web multipágina que simula una billetera digital: permite iniciar sesión, ver el saldo disponible, realizar depósitos, transferir dinero a contactos y revisar el historial de movimientos. Todo con persistencia local y navegación entre vistas sin recargar la página.</p>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">02</span>
+                <h3>Desafío principal</h3>
+                <p>Mantener el estado de la cuenta (saldo, movimientos, sesión activa) consistente entre múltiples vistas HTML sin un backend, aplicando validaciones robustas de formularios y evitando la pérdida de datos al navegar entre páginas.</p>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">03</span>
+                <h3>Solución propuesta</h3>
+                <p>Implementé una arquitectura modular en JavaScript donde cada vista tiene su propio archivo (login, registro, depósitos, transferencias, transacciones), todos comunicados a través de <strong>localStorage</strong> y funciones utilitarias compartidas. Usé validaciones en cliente con jQuery y diseñé la interfaz con Bootstrap, aplicando jerarquía visual clara para guiar al usuario.</p>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">04</span>
+                <h3>Herramientas técnicas</h3>
+                <ul class="case-chips">
+                  <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+                  <li>jQuery</li><li>Bootstrap</li><li>localStorage</li>
+                  <li>Figma</li><li>Git &amp; GitHub</li>
+                </ul>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">05</span>
+                <h3>Principales aprendizajes</h3>
+                <ul>
+                  <li>Diseñar arquitecturas frontend modulares y fáciles de mantener.</li>
+                  <li>Gestionar estado compartido sin frameworks, con localStorage.</li>
+                  <li>Validar datos en cliente para mejorar la experiencia del usuario.</li>
+                  <li>Aplicar principios de UX/UI en un producto financiero.</li>
+                </ul>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">06</span>
+                <h3>Métricas de impacto</h3>
+                <ul>
+                  <li><strong>5 vistas funcionales</strong> integradas: login, registro, depósito, transferencia e historial.</li>
+                  <li>Reducción del <strong>~60 %</strong> del código duplicado gracias a la modularización por vistas.</li>
+                  <li>Cobertura del <strong>100 %</strong> de las validaciones de formularios definidas en el wireframe.</li>
+                  <li>Persistencia de datos completa: el saldo y movimientos se mantienen al cerrar el navegador.</li>
+                </ul>
+              </article>
+
+              <article class="case-item">
+                <span class="case-num">07</span>
+                <h3>Habilidades técnicas aplicadas</h3>
+                <ul>
+                  <li>Manipulación del DOM y eventos con JavaScript y jQuery.</li>
+                  <li>Estructuración semántica con HTML5 y maquetación responsiva con CSS3 y Bootstrap.</li>
+                  <li>Almacenamiento local (localStorage) y simulación de lógica de negocio.</li>
+                  <li>Wireframing y arquitectura de información en Figma.</li>
+                  <li>Control de versiones con Git y GitHub.</li>
+                </ul>
+              </article>
+
+              <article class="case-item case-item--wide">
+                <span class="case-num">08</span>
+                <h3>¿Por qué elegí este proyecto?</h3>
+                <p>Elegí Alke Wallet porque fue mi primer proyecto frontend completo y autónomo. Reunió en un solo desafío lo que más me interesa del desarrollo: pensar la experiencia del usuario, estructurar la información, mantener un código ordenado y resolver problemas reales sin depender de un backend. Es el proyecto que mejor refleja mi transición desde el diseño gráfico hacia el desarrollo web, y por eso ocupa un lugar central en mi portafolio.</p>
+              </article>
+
+            </div>
+          </div>
+        </details>
+      </div>
     </section>
 
     <section id="disciplinas" aria-labelledby="d-h">
