@@ -124,7 +124,7 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.02em;line-height:1.1}
 .exp details ul{padding:0 20px 20px 40px;color:#C9CDF0}
 .exp details li{margin-bottom:6px}
 
-/* Títulos de sección dentro de #experiencia */
+/* Títulos de sección */
 .section-title{
   text-align:center;
   margin-bottom:32px;
@@ -148,25 +148,68 @@ footer h2{margin-bottom:20px}
 .contact .mail{display:inline-block;margin-top:32px;font:500 1.1rem var(--mono);text-decoration:underline;text-decoration-color:var(--design);text-decoration-thickness:3px;text-underline-offset:6px}
 .contact .links{flex-direction:column;gap:8px}
 
-.quotes{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"a b" "a c"}
-.quote{padding:24px;color:#fff;font-size:.95rem;line-height:1.55}
-.quote:nth-child(1){grid-area:a;background:#6B2FD9}
-.quote:nth-child(2){grid-area:b;background:var(--code)}
-.quote:nth-child(3){grid-area:c;background:#C81C69}
-.quote::before{content:"\201C";display:block;font:800 3.4rem/.7 var(--sans);opacity:.6;margin-bottom:8px}
-.quote strong{display:block;margin-top:14px}
-.quote small{display:block;opacity:.85}
-.quote.info::before{content:none}
-.quote.info h3{font-size:1.15rem;margin-bottom:10px}
-.quote.info ul{padding-left:18px}
-.quote.info li{margin-bottom:8px}
+/* --------------------------------------------------------------------------
+   Testimonios — bloques oscuros con línea superior de color
+   -------------------------------------------------------------------------- */
+.quotes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:"a b" "a c";
+  gap:16px;
+}
 
-/* Título dentro de los testimonios */
+.quote{
+  background:var(--ink);
+  color:#C9CDF0;
+  padding:28px 24px;
+  font-size:.95rem;
+  line-height:1.6;
+  border-top:3px solid var(--design);
+}
+
+/* Comilla grande decorativa */
+.quote::before{
+  content:"\201C";
+  display:block;
+  font:800 3.4rem/.7 var(--sans);
+  color:var(--design);
+  margin-bottom:16px;
+}
+
+/* Colores por posición: 1º morado, 2º azul, 3º rosa */
+.quote:nth-child(1){grid-area:a; border-top-color:#6B2FD9;}
+.quote:nth-child(1)::before{color:#6B2FD9;}
+.quote:nth-child(1) h3{color:#6B2FD9;}
+
+.quote:nth-child(2){grid-area:b; border-top-color:var(--code);}
+.quote:nth-child(2)::before{color:var(--code);}
+.quote:nth-child(2) h3{color:var(--code);}
+
+.quote:nth-child(3){grid-area:c; border-top-color:var(--design);}
+.quote:nth-child(3)::before{color:var(--design);}
+.quote:nth-child(3) h3{color:var(--design);}
+
+/* Título del testimonio */
 .quote h3{
   font:500 .95rem var(--mono);
   text-transform:uppercase;
   letter-spacing:.08em;
   margin-bottom:12px;
+}
+
+/* Nombre y rol */
+.quote strong{
+  display:block;
+  margin-top:20px;
+  color:#fff;
+  font-weight:600;
+}
+
+.quote small{
+  display:block;
+  color:#9FA6D9;
+  font-size:.85rem;
+  margin-top:2px;
 }
 
 /* ==========================================================================
